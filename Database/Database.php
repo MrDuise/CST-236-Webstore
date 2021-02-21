@@ -1,11 +1,11 @@
 <?php 
 class Database
 {
-    private $host = "localhost";
-    private $username = "root";
-    private $password = "root";
+    private $host = "td5l74lo6615qq42.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    private $username = "kakp5w4hpvontlpb";
+    private $password = "pd696xpbs4qihqla";
     private $database_name = "cst-236 milestone";
-    private $port = 8889;
+    private $port = 3306;
    
 
         
