@@ -78,6 +78,9 @@ session_start();
 					$result_u = mysqli_query($connection, $sql_user);
 					//$result_p = mysqli_query($conn, $sql_pass);
 					
+					$defaultRole = "user";
+					
+					
 					
 					//checks if the username and password combo already is in the database, if it is, outputs a warning
 					//if not, inputs the data into the table and informs the user that they are now registered
@@ -91,7 +94,7 @@ session_start();
 					}
 					else{
 					    
-					    $sql = "INSERT INTO `users` (`User_Name`, `First_Name`, `Last_Name`, `Email`, `Password`) VALUES ( '$userName', '$personFirst', '$personLast', '$email', '$passWord')";
+					    $sql = "INSERT INTO `users` (`User_Name`, `First_Name`, `Last_Name`, `Email`, `Password`, `role`) VALUES ( '$userName', '$personFirst', '$personLast', '$email', '$passWord', '$defaultRole')";
 					    if (mysqli_query($connection, $sql)) {
 					        echo "You are now a registered<br>";
 					        echo "at the best PC parts store<br>";

@@ -1,6 +1,6 @@
 <?php 
 require_once '../../Autoloader.php';
-//require_once '../Database/ProductDataService.php';
+
 class ProductBuisnessService{
   
     
@@ -37,6 +37,22 @@ class ProductBuisnessService{
         return $products;
     }
     
+    function makeNewProduct($product) {
+        $dbService = new ProductDataService();
+        return  $dbService->makeNewProduct($product);
+    }
+    
+    function updateProduct($id, $product){
+        $dbService = new ProductDataService();
+        return  $dbService->editProduct($id, $product);
+        
+    }
+    
+    function deleteProduct($id){
+        $dbService = new ProductDataService();
+        return  $dbService->deleteProduct($id);
+    
+}
 }
 
 

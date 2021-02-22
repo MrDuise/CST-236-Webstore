@@ -50,6 +50,7 @@ session_start();
                 $row = mysqli_fetch_assoc($result);
                 $_SESSION['username'] = $row['User_Name'];
                 $_SESSION['userid'] = $row['ID'];
+                $_SESSION['role'] = $row['role'];
                 
                 //include 'main-welcome.php';
                 //this line will cause the page to immeddlety jump to the next page

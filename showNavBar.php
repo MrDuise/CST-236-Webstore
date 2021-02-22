@@ -1,10 +1,13 @@
 <?php
-// Michael Duisenberg
-// 10-20-20
-// CST-126
-// This page just displays a nav bar at the top of the screen, it also checks
-// Version 1.0
-require_once '../../Autoloader.php';
+/*
+ * Michael Duisenberg
+ * Navbar
+ * This is the navbar for the main application. Admin pages will not show in navbar if user is not an admin
+ * last updated 02-17-21
+ * Milestone 3 of the Webstore application in PHP and web design level 2 class
+ */
+session_start();
+require_once 'Autoloader.php';
 ?>
 
 <!doctype html>
@@ -69,15 +72,24 @@ require_once '../../Autoloader.php';
 				</a></li>
 				<li class="nav-item"><a class="nav-link" href="/Milestone/Presentation/Handlers/Product Catalog Display.php">Product Display</a>
 				</li>
+				<?php 
+				if($_SESSION['role'] == 'admin')
+				{
+				    ?>
+				
 				 <li class="nav-item dropdown">
         			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          				 Admin
        				 </a>
-       				 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Adminpage-DisplayUsers.php">Users</a>
-          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Adminpage-DisplayProducts.php">Products</a>
+            		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Admin/Adminpage-DisplayUsers.php">Users</a>
+          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Admin/Adminpage-DisplayProducts.php">Products</a>
               		</div>
+              		<div class="dropdown-divider">Add</div>
      			 </li>
+     			 <?php 
+     			 }
+     			 ?>
 				<li class="nav-item">
 					<a class="nav-link" href="/Milestone/logOut.php">Logout</a>
 				</li>
