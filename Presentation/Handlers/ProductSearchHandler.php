@@ -29,7 +29,7 @@ session_start();
 				    $n = $_GET['name'];
 
 					$products = array();
-					$p = new ProductDataService();
+					$p = new ProductBuisnessService();
 
 					$products = $p->findByProductName($n);
 
