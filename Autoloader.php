@@ -18,6 +18,8 @@ spl_autoload_register(function($class) {
     //count the number of slashs and folder depth
     $numberOfLastDirectories = substr_count($lastDirectories,'\\');
     
+    echo $numberOfLastDirectories;
+    
     
    
     
