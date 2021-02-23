@@ -24,7 +24,7 @@ spl_autoload_register(function($class) {
    
     
     //This is the list of possible directories that classes are found in this app
-    $directories = ['BuisnessService', 'BuisnessService/Models', 'app/Database', 'Presentation', 'Presentation/Handlers', 'Presentation/Views', 'Utility'];
+    $directories = ['BuisnessService', 'BuisnessService/Models', 'Database', 'Presentation', 'Presentation/Handlers', 'Presentation/Views', 'Utility'];
     foreach($directories as $d)
     {
         $currentDirectory = $d;
