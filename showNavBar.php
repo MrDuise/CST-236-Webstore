@@ -67,7 +67,7 @@ require_once 'Autoloader.php';
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="/Milestone/Presentation/Views/main-welcome.php">Home
+				<li class="nav-item"><a class="nav-link" href="/Presentation/Views/main-welcome.php">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
 				<li class="nav-item"><a class="nav-link" href="/Presentation/Handlers/Product Catalog Display.php">Product Display</a>
