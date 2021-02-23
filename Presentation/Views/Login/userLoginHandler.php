@@ -8,8 +8,8 @@ session_start();
 //Version 1.0
 
 
-          require_once '../../../Database/Database.php';
-         //require_once '../../../Autoloader.php';
+          //require_once '../../../Database/Database.php';
+         require_once '../../../Autoloader.php';
             
             
             
