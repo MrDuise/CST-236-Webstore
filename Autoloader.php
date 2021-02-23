@@ -16,7 +16,7 @@ spl_autoload_register(function($class) {
     echo __DIR__ . "<br>";
     
     //count the number of slashs and folder depth
-    $numberOfLastDirectories = substr_count($lastDirectories,'\\');
+    $numberOfLastDirectories = substr_count($lastDirectories,'/');
     
     echo $numberOfLastDirectories;
     
