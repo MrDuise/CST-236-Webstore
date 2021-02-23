@@ -70,7 +70,7 @@ require_once 'Autoloader.php';
 				<li class="nav-item"><a class="nav-link" href="/Milestone/Presentation/Views/main-welcome.php">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="/Milestone/Presentation/Handlers/Product Catalog Display.php">Product Display</a>
+				<li class="nav-item"><a class="nav-link" href="/Presentation/Handlers/Product Catalog Display.php">Product Display</a>
 				</li>
 				<?php 
 				if($_SESSION['role'] == 'admin')
@@ -82,8 +82,8 @@ require_once 'Autoloader.php';
          				 Admin
        				 </a>
             		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Admin/Adminpage-DisplayUsers.php">Users</a>
-          				<a class="dropdown-item" href="/Milestone/Presentation/Views/Admin/Adminpage-DisplayProducts.php">Products</a>
+          				<a class="dropdown-item" href="/Presentation/Views/Admin/Adminpage-DisplayUsers.php">Users</a>
+          				<a class="dropdown-item" href="/Presentation/Views/Admin/Adminpage-DisplayProducts.php">Products</a>
               		</div>
               		<div class="dropdown-divider">Add</div>
      			 </li>
@@ -91,13 +91,13 @@ require_once 'Autoloader.php';
      			 }
      			 ?>
 				<li class="nav-item">
-					<a class="nav-link" href="/Milestone/logOut.php">Logout</a>
+					<a class="nav-link" href="/logOut.php">Logout</a>
 				</li>
 			</ul>
 		</div>
 		
 		
-		 <form action="/Milestone/Presentation/Handlers/ProductSearchHandler.php" class="form-inline my-2 my-lg-0">
+		 <form action="/Presentation/Handlers/ProductSearchHandler.php" class="form-inline my-2 my-lg-0">
       		<input class="form-control mr-sm-2" type="search" placeholder="Search" name="name" aria-label="Search">
       		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
