@@ -8,5 +8,5 @@ session_start();
 unset($_SESSION);
 session_destroy();
 session_write_close();
-header("Location: /Milestone/Presentation/Views/Login/userLogin.php");
+header("Location: /Presentation/Views/Login/userLogin.php");
 die;
