@@ -10,7 +10,7 @@ spl_autoload_register(function($class) {
     //get the difference of location between the location of autoloader and the file that called autoloader
     $lastDirectories = substr(getcwd(), strlen(__DIR__));
     
-  
+    echo "I am trying to do autoloading";
     
     //count the number of slashs and folder depth
     $numberOfLastDirectories = substr_count($lastDirectories,'\\');
